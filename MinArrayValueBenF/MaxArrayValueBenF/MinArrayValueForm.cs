@@ -2,8 +2,8 @@
  * Created by: Benjamin Falsetto
  * Created on: 2018/12/03
  * Created for: ICS3U Programming
- * Daily Assignment – Day #37 - Find Max Value
- * This program...
+ * Daily Assignment – Day #37 - Find Min Value
+ * This program randomly generates 10 numbers and finds the min value
 */
 
 using System;
@@ -18,10 +18,10 @@ using System.Windows.Forms;
 
 namespace MaxArrayValueBenF
 {
-    public partial class frmMaxArrayValue : Form
+    public partial class frmMinArrayValue : Form
     {
         Random rndNumGen;
-        public frmMaxArrayValue()
+        public frmMinArrayValue()
         {
             InitializeComponent();
             rndNumGen = new Random();
@@ -32,7 +32,7 @@ namespace MaxArrayValueBenF
             //declare local variables and constants
             const int MAX_ARRAY_SIZE = 10, MAX_RANDOM_NUMBER = 500;
             int[] arrayOfIntegers = new int[MAX_ARRAY_SIZE];
-            int index, randomNumber, currentMaxVal = 0;
+            int index, randomNumber, currentMinVal = 501;
 
             //clear the listbox
             this.lstNumbers.Items.Clear();
@@ -55,19 +55,19 @@ namespace MaxArrayValueBenF
                 this.Refresh();
             }
 
-            //check to see which number is the greatest
+            //check to see which number is the least
             for (index = 0; index < MAX_ARRAY_SIZE; index++)
             {
                 //check to see if the value at current index is larger than the highest found value
-                if (arrayOfIntegers[index] > currentMaxVal)
+                if (arrayOfIntegers[index] < currentMinVal)
                 {
-                    currentMaxVal = arrayOfIntegers[index];
+                    currentMinVal = arrayOfIntegers[index];
                 }
             }
 
             //display the max value in a label
-            this.lblMaxVal.Text = ("The max value is " + currentMaxVal);
-            this.lblMaxVal.Show();
+            this.lblMinVal.Text = ("The min value is " + currentMinVal);
+            this.lblMinVal.Show();
         }
     }
 }

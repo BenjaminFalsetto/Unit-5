@@ -1,6 +1,6 @@
 ﻿namespace MaxArrayValueBenF
 {
-    partial class frmMaxArrayValue
+    partial class frmMinArrayValue
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.btnStart = new System.Windows.Forms.Button();
             this.lstNumbers = new System.Windows.Forms.ListBox();
-            this.lblMaxVal = new System.Windows.Forms.Label();
+            this.lblMinVal = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnStart
@@ -51,27 +51,27 @@
             this.lstNumbers.Size = new System.Drawing.Size(120, 95);
             this.lstNumbers.TabIndex = 1;
             // 
-            // lblMaxVal
+            // lblMinVal
             // 
-            this.lblMaxVal.AutoSize = true;
-            this.lblMaxVal.Location = new System.Drawing.Point(108, 251);
-            this.lblMaxVal.Name = "lblMaxVal";
-            this.lblMaxVal.Size = new System.Drawing.Size(90, 13);
-            this.lblMaxVal.TabIndex = 2;
-            this.lblMaxVal.Text = "The max value is:";
-            this.lblMaxVal.Visible = false;
+            this.lblMinVal.AutoSize = true;
+            this.lblMinVal.Location = new System.Drawing.Point(108, 251);
+            this.lblMinVal.Name = "lblMinVal";
+            this.lblMinVal.Size = new System.Drawing.Size(87, 13);
+            this.lblMinVal.TabIndex = 2;
+            this.lblMinVal.Text = "The min value is:";
+            this.lblMinVal.Visible = false;
             // 
-            // frmMaxArrayValue
+            // frmMinArrayValue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(343, 303);
-            this.Controls.Add(this.lblMaxVal);
+            this.Controls.Add(this.lblMinVal);
             this.Controls.Add(this.lstNumbers);
             this.Controls.Add(this.btnStart);
-            this.Name = "frmMaxArrayValue";
+            this.Name = "frmMinArrayValue";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Max Array Value Benjamin Falsetto";
+            this.Text = "Min Array Value Benjamin Falsetto";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -81,7 +81,7 @@
 
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.ListBox lstNumbers;
-        private System.Windows.Forms.Label lblMaxVal;
+        private System.Windows.Forms.Label lblMinVal;
     }
 }
 

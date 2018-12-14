@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.nudHeight = new System.Windows.Forms.NumericUpDown();
-            this.lstNumbers = new System.Windows.Forms.ListBox();
             this.nudWidth = new System.Windows.Forms.NumericUpDown();
             this.lblHeight = new System.Windows.Forms.Label();
             this.lblWidth = new System.Windows.Forms.Label();
             this.btnCreate = new System.Windows.Forms.Button();
+            this.txtArray = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudWidth)).BeginInit();
             this.SuspendLayout();
@@ -44,14 +44,6 @@
             this.nudHeight.Name = "nudHeight";
             this.nudHeight.Size = new System.Drawing.Size(120, 20);
             this.nudHeight.TabIndex = 0;
-            // 
-            // lstNumbers
-            // 
-            this.lstNumbers.FormattingEnabled = true;
-            this.lstNumbers.Location = new System.Drawing.Point(32, 135);
-            this.lstNumbers.Name = "lstNumbers";
-            this.lstNumbers.Size = new System.Drawing.Size(120, 95);
-            this.lstNumbers.TabIndex = 1;
             // 
             // nudWidth
             // 
@@ -88,16 +80,24 @@
             this.btnCreate.UseVisualStyleBackColor = true;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
+            // txtArray
+            // 
+            this.txtArray.Location = new System.Drawing.Point(12, 121);
+            this.txtArray.Multiline = true;
+            this.txtArray.Name = "txtArray";
+            this.txtArray.Size = new System.Drawing.Size(160, 109);
+            this.txtArray.TabIndex = 6;
+            // 
             // frm2DArrays
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(184, 280);
+            this.Controls.Add(this.txtArray);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.lblWidth);
             this.Controls.Add(this.lblHeight);
             this.Controls.Add(this.nudWidth);
-            this.Controls.Add(this.lstNumbers);
             this.Controls.Add(this.nudHeight);
             this.Name = "frm2DArrays";
             this.Text = "2D Arrays Benjamin Falsetto";
@@ -111,11 +111,11 @@
         #endregion
 
         private System.Windows.Forms.NumericUpDown nudHeight;
-        private System.Windows.Forms.ListBox lstNumbers;
         private System.Windows.Forms.NumericUpDown nudWidth;
         private System.Windows.Forms.Label lblHeight;
         private System.Windows.Forms.Label lblWidth;
         private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.TextBox txtArray;
     }
 }
 

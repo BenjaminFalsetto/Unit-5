@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.28307.136
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileReadWriteBenF", "FileReadWriteBenF\FileReadWriteBenF.csproj", "{7080FB9F-BACB-4367-9703-79CC621676E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileReadWriteBenF", "FileReadWriteBenF\FileReadWriteBenF.csproj", "{F1BC373C-F619-4B66-B586-A7606B67625E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7080FB9F-BACB-4367-9703-79CC621676E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7080FB9F-BACB-4367-9703-79CC621676E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7080FB9F-BACB-4367-9703-79CC621676E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7080FB9F-BACB-4367-9703-79CC621676E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1BC373C-F619-4B66-B586-A7606B67625E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1BC373C-F619-4B66-B586-A7606B67625E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1BC373C-F619-4B66-B586-A7606B67625E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1BC373C-F619-4B66-B586-A7606B67625E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C306043A-18F6-430A-BE34-D9899DBFB93F}
 	EndGlobalSection
 EndGlobal

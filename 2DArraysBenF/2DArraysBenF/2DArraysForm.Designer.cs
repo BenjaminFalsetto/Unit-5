@@ -34,6 +34,7 @@
             this.lblWidth = new System.Windows.Forms.Label();
             this.btnCreate = new System.Windows.Forms.Button();
             this.txtArray = new System.Windows.Forms.TextBox();
+            this.btnCalculateAvg = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudWidth)).BeginInit();
             this.SuspendLayout();
@@ -82,17 +83,29 @@
             // 
             // txtArray
             // 
-            this.txtArray.Location = new System.Drawing.Point(12, 121);
+            this.txtArray.Enabled = false;
+            this.txtArray.Location = new System.Drawing.Point(32, 141);
             this.txtArray.Multiline = true;
             this.txtArray.Name = "txtArray";
-            this.txtArray.Size = new System.Drawing.Size(160, 109);
+            this.txtArray.Size = new System.Drawing.Size(120, 89);
             this.txtArray.TabIndex = 6;
+            // 
+            // btnCalculateAvg
+            // 
+            this.btnCalculateAvg.Location = new System.Drawing.Point(38, 265);
+            this.btnCalculateAvg.Name = "btnCalculateAvg";
+            this.btnCalculateAvg.Size = new System.Drawing.Size(109, 23);
+            this.btnCalculateAvg.TabIndex = 8;
+            this.btnCalculateAvg.Text = "Calculate Average";
+            this.btnCalculateAvg.UseVisualStyleBackColor = true;
+            this.btnCalculateAvg.Click += new System.EventHandler(this.btnCalculateAvg_Click);
             // 
             // frm2DArrays
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(184, 280);
+            this.ClientSize = new System.Drawing.Size(184, 295);
+            this.Controls.Add(this.btnCalculateAvg);
             this.Controls.Add(this.txtArray);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.lblWidth);
@@ -100,6 +113,7 @@
             this.Controls.Add(this.nudWidth);
             this.Controls.Add(this.nudHeight);
             this.Name = "frm2DArrays";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "2D Arrays Benjamin Falsetto";
             ((System.ComponentModel.ISupportInitialize)(this.nudHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudWidth)).EndInit();
@@ -116,6 +130,7 @@
         private System.Windows.Forms.Label lblWidth;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.TextBox txtArray;
+        private System.Windows.Forms.Button btnCalculateAvg;
     }
 }
 

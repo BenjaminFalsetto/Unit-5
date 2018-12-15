@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.nudHeight = new System.Windows.Forms.NumericUpDown();
-            this.lstNumbers = new System.Windows.Forms.ListBox();
             this.nudWidth = new System.Windows.Forms.NumericUpDown();
             this.lblHeight = new System.Windows.Forms.Label();
             this.lblWidth = new System.Windows.Forms.Label();
             this.btnCreate = new System.Windows.Forms.Button();
+            this.txtArray = new System.Windows.Forms.TextBox();
+            this.btnCalculateAvg = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudWidth)).BeginInit();
             this.SuspendLayout();
@@ -44,14 +45,6 @@
             this.nudHeight.Name = "nudHeight";
             this.nudHeight.Size = new System.Drawing.Size(120, 20);
             this.nudHeight.TabIndex = 0;
-            // 
-            // lstNumbers
-            // 
-            this.lstNumbers.FormattingEnabled = true;
-            this.lstNumbers.Location = new System.Drawing.Point(32, 135);
-            this.lstNumbers.Name = "lstNumbers";
-            this.lstNumbers.Size = new System.Drawing.Size(120, 95);
-            this.lstNumbers.TabIndex = 1;
             // 
             // nudWidth
             // 
@@ -88,18 +81,39 @@
             this.btnCreate.UseVisualStyleBackColor = true;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
+            // txtArray
+            // 
+            this.txtArray.Enabled = false;
+            this.txtArray.Location = new System.Drawing.Point(32, 141);
+            this.txtArray.Multiline = true;
+            this.txtArray.Name = "txtArray";
+            this.txtArray.Size = new System.Drawing.Size(120, 89);
+            this.txtArray.TabIndex = 6;
+            // 
+            // btnCalculateAvg
+            // 
+            this.btnCalculateAvg.Location = new System.Drawing.Point(38, 265);
+            this.btnCalculateAvg.Name = "btnCalculateAvg";
+            this.btnCalculateAvg.Size = new System.Drawing.Size(109, 23);
+            this.btnCalculateAvg.TabIndex = 8;
+            this.btnCalculateAvg.Text = "Calculate Average";
+            this.btnCalculateAvg.UseVisualStyleBackColor = true;
+            this.btnCalculateAvg.Click += new System.EventHandler(this.btnCalculateAvg_Click);
+            // 
             // frm2DArrays
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(184, 280);
+            this.ClientSize = new System.Drawing.Size(184, 295);
+            this.Controls.Add(this.btnCalculateAvg);
+            this.Controls.Add(this.txtArray);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.lblWidth);
             this.Controls.Add(this.lblHeight);
             this.Controls.Add(this.nudWidth);
-            this.Controls.Add(this.lstNumbers);
             this.Controls.Add(this.nudHeight);
             this.Name = "frm2DArrays";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "2D Arrays Benjamin Falsetto";
             ((System.ComponentModel.ISupportInitialize)(this.nudHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudWidth)).EndInit();
@@ -111,11 +125,12 @@
         #endregion
 
         private System.Windows.Forms.NumericUpDown nudHeight;
-        private System.Windows.Forms.ListBox lstNumbers;
         private System.Windows.Forms.NumericUpDown nudWidth;
         private System.Windows.Forms.Label lblHeight;
         private System.Windows.Forms.Label lblWidth;
         private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.TextBox txtArray;
+        private System.Windows.Forms.Button btnCalculateAvg;
     }
 }
 

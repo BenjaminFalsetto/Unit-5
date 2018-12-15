@@ -12,7 +12,11 @@ namespace _2DArraysBenF
 {
     public partial class frm2DArrays : Form
     {
+        //declare global variables
         Random rndNumGen;
+        int numCounter = 0;
+        int numTotal = 0;
+        int avg = 0;
 
         public frm2DArrays()
         {
@@ -44,6 +48,12 @@ namespace _2DArraysBenF
                     //get a random number between 0 and 9
                     aRndNum = rndNumGen.Next(0, 9 + 1);
 
+                    //add the random number to the total
+                    numTotal += aRndNum;
+
+                    //increment the counter that shows how manu numbers are in the array
+                    numCounter++;
+
                     //insert the random number into the array at the current height and width
                     anArray[heightCounter, widthCounter] = aRndNum;
 
@@ -52,9 +62,19 @@ namespace _2DArraysBenF
                 }
                 //add a line break to the end of the line to show a new row in the string
                 aPieceOfText = aPieceOfText + "\r" + "\n";
+                Console.WriteLine("***aPieceOfText = \n" + aPieceOfText);
             }
             //insert the string into the listbox
-            this.lstNumbers.Items.Add(aPieceOfText);
+            this.txtArray.Text = (aPieceOfText);
+        }
+
+        private void btnCalculateAvg_Click(object sender, EventArgs e)
+        {
+            //calculate the average
+            avg = numTotal / numCounter;
+
+            //display the average in a messagebox
+            MessageBox.Show("The average is " + avg, "Average");
         }
     }
 }
